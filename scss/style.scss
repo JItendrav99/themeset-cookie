@@ -1,0 +1,48 @@
+@charset 'utf-8';
+
+@import "mixin";
+
+html {
+    font-size: 16px;
+
+    @include breakpoint(portrait-mobile-max) {
+        font-size: 15px;
+    }
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    background: white;
+    position: relative;
+}
+
+.theme-bg {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: block;
+    margin: 0 auto;
+}
+
+.theme--contrast-theme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.summer-theme {
+    background-color: bisque;
+}
+
+.spring-theme {
+    background-color: seagreen;
+}
+
+.winter-theme {
+    background-color: darkblue;
+}
